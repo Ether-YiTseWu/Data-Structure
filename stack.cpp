@@ -5,19 +5,19 @@ using namespace std;
 class stack
 {
     public:
-        int Top, Data[size]; // Just declare the member variable. Can't assign some values to these member variable.
+        int Top, Data[size]; // Just declare the member variable. Can't assign some values to these member variables.
         void push(int i);
         void pop();
         void listt();
     stack()
     {
-        Top = -1;            // Use construct function to initialize the value of this variable.
+        Top = -1;            // Use construct function to initialize the value of this member variable.
     }
 };
 
 void stack::push(int i)
 {
-    if(Top >= size-1)        // Warning : because the code below it is "Top++", we must write ">= size-1".
+    if(Top >= size-1)        // Warning : because the code below this line is "Top++", we must write ">= size-1".
     {
         cout << "Full" << endl;
         return ;
