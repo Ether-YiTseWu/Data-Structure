@@ -25,6 +25,7 @@ void stack::push(int i)
     }
     Top ++;
     Data[Top] = i;
+    cout << "Push : " << i << endl;
 }
 
 void stack::pop()
@@ -34,7 +35,7 @@ void stack::pop()
         cout << "Empty" << endl;
         return ;
     }
-    cout << Data[Top] << endl;
+    cout << "Pop : " <<  Data[Top] << endl;
     Top --;
 }
 
