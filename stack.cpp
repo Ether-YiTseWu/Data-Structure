@@ -8,7 +8,8 @@ class stack
         int Top, Data[size]; // Just declare the member variable. Can't assign some values to these member variables.
         void push(int i);
         void pop();
-        void listt();
+        void topData();
+        void getSize();
     stack()
     {
         Top = -1;            // Use construct function to initialize the value of this member variable.
@@ -35,6 +36,16 @@ void stack::pop()
     }
     cout << Data[Top] << endl;
     Top --;
+}
+
+void stack::topData()
+{
+    cout << "the value of Top Data is : "<< Data[Top] << endl;
+}
+
+void stack::getSize()
+{
+    cout << "the size of Data is : " << Top+1 << endl;
 }
 
 int main()
