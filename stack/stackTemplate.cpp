@@ -44,7 +44,7 @@ void stack<T>::Pop()
 
 int main()
 {
-	stack<int> st1(-1);
+	stack<int> st1(-1);		// assign -1 to the "Top" variable
 	stack<char> st2(-1);
 	int i, j;
 
@@ -58,7 +58,7 @@ int main()
 	cout << endl;
 
 	for (j = 0; j < 11; j++)
-		st2.Push('A'+ j);
+		st2.Push('A'+ j);	// make it display A ~ J
 	while (j--)
 		st2.Pop();
 
