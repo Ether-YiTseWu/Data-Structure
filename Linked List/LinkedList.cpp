@@ -40,14 +40,14 @@ public:
 			p = p->next;
 		p->next = x;
 	}
-	void pop_front()	//¿é¥X¥Î
+	void pop_front()	//Â¿for output
 	{
         if(head -> next == NULL)
         {
             cout << "Empty" << endl;
             return;
         }
-        Node *node;
+        Node *node = new Node(11);
         node = head ->next;
         cout << "pop_front : " << node->Data <<endl;
         head->next = node ->next;
