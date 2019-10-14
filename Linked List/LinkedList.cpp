@@ -20,25 +20,25 @@ public:
 
 	void push_front(int data)
 	{
-		Node * x = new Node(data);
+		Node * newNode = new Node(data);
 		cout << "push_front : " << data << endl;
 		if (head->next == NULL)
 		{
-			head->next = x;
+			head->next = newNode;
 				return;
 		}
-		x->next = head->next;
-		head->next = x;
+		newNode->next = head->next;
+		head->next = newNode;
 	}
 	void push_back(int data)
 	{
-		Node * x = new Node(data);
+		Node * newNode = new Node(data);
 		Node * p = new Node(data);
 
 		p = head->next;
 		while (p->next != NULL)
 			p = p->next;
-		p->next = x;
+		p->next = newNode;
 	}
 	void pop_front()	//¿for output
 	{
@@ -47,11 +47,11 @@ public:
             cout << "Empty" << endl;
             return;
         }
-        Node *node = new Node(11);
-        node = head ->next;
-        cout << "pop_front : " << node->Data <<endl;
-        head->next = node ->next;
-        delete node;
+        Node * tempNode = new Node(11);
+        tempNode = head ->next;
+        cout << "pop_front : " << tempNode->Data <<endl;
+        head->next = tempNode ->next;
+        delete tempNode;
 	}
 };
 
