@@ -16,7 +16,7 @@ public:
 class LinkedList
 {
 public:
-	Node * head = new Node(123);    // 123 no meaning, because head node has not data in linked list
+	Node * head = new Node(123);    // "123" is no meaning, because head node has not data in linked list
 
 	void push_front(int data)
 	{
@@ -25,7 +25,7 @@ public:
 		if (head->next == NULL)
 		{
 			head->next = newNode;
-				return;
+            return;
 		}
 		newNode->next = head->next;
 		head->next = newNode;
@@ -33,24 +33,24 @@ public:
 	void push_back(int data)
 	{
 		Node * newNode = new Node(data);
-		Node * p = new Node(data);
+		Node * lastNode = new Node(data);
 
-		p = head->next;
-		while (p->next != NULL)
-			p = p->next;
-		p->next = newNode;
+		lastNode = head->next;
+		while (lastNode->next != NULL)
+			lastNode = lastNode->next;
+		lastNode->next = newNode;
 	}
-	void pop_front()	//¿for output
+	void pop_front()	           //for output
 	{
         if(head -> next == NULL)
         {
             cout << "Empty" << endl;
             return;
         }
-        Node * tempNode = new Node(11);
-        tempNode = head ->next;
-        cout << "pop_front : " << tempNode->Data <<endl;
-        head->next = tempNode ->next;
+        Node * tempNode = new Node(123);
+        tempNode = head -> next;
+        cout << "pop_front : " << tempNode -> Data << endl;
+        head->next = tempNode -> next;
         delete tempNode;
 	}
 };
