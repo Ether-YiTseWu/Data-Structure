@@ -32,10 +32,17 @@ public:
 	}
 	void push_back(int data)
 	{
+		cout << "Push back Data :" << data << endl;
 		Node * newNode = new Node(data);
 		Node * lastNode = new Node(data);
-
-		lastNode = head->next;
+		
+		if (head -> next == NULL)
+        	{
+           		head -> next = newNode;
+          		return;
+        	}
+		
+        	lastNode = head -> next;
 		while (lastNode->next != NULL)
 			lastNode = lastNode->next;
 		lastNode->next = newNode;
