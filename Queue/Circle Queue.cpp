@@ -5,11 +5,11 @@ using namespace std;
 class circleQueue
 {
 public:
-	int start, end;
+	int start, top;
 	int Data[Max];
 	circleQueue(void)
 	{
-		start = end = (Max-1);          // need to initialize start, end = (Max-1)
+		start = top = (Max-1);      // need to initialize start, end = (Max-1)
 	}
 	void enQueue(int i);
 	void deQueue();
@@ -17,19 +17,19 @@ public:
 
 void circleQueue::enQueue(int i)
 {
-	if (start == (end + 1) % Max)       // (xxx + 1) % Max is a key point of circle queue
+	if (start == (top + 1) % Max)       // (xxx + 1) % Max is a key point of circle queue
 	{
 		cout << "Full!" << endl;
 		return;
 	}
-	end = (end + 1) % Max;
-	Data[end] = i;
+	top = (top + 1) % Max;
+	Data[top] = i;
 	cout << "Eequeue : " << i << endl;
 }
 
 void circleQueue::deQueue()
 {
-	if (start == end)
+	if (start == top)
 	{
 		cout << "empty!" << endl;
 		return;
