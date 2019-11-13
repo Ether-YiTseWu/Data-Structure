@@ -49,16 +49,16 @@ public:
 	}
 	void pop_front()	           //for output
 	{
-        if(head -> next == NULL)
-        {
-            cout << "Empty" << endl;
-            return;
-        }
-        Node * tempNode = new Node(123);
-        tempNode = head -> next;
-        cout << "pop_front : " << tempNode -> Data << endl;
-        head->next = tempNode -> next;
-        delete tempNode;
+        	if(head -> next == NULL)
+        	{
+			cout << "Empty" << endl;
+			return;
+		}
+		Node * tempNode = new Node(123);
+		tempNode = head -> next;
+		cout << "pop_front : " << tempNode -> Data << endl;
+		head->next = tempNode -> next;
+		delete tempNode;
 	}
 };
 
