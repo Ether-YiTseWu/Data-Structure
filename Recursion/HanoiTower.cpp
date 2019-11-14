@@ -1,14 +1,17 @@
 #include <iostream>
-#include <cstdio>
+#include <stdlib.h>
 using namespace std;
 
-void hannoi(int n, char from, char buffer, char to)
+void hannoi(int n, char a, char b, char c)
 {
-	if (n == 0)
-		return;
-	hannoi(n - 1, from, to, buffer);
-	cout << "Move disk " << n << " from " << from << " to " << to << endl;
-	hannoi(n - 1, buffer, from, to);
+	if (n == 1)
+		cout << "Move disk 1 from " << a << " to " << c << endl;
+    else
+    {
+        hannoi(n - 1, a, c, b);
+        cout << "Move disk " << n << " from " << a << " to " << c << endl;
+        hannoi(n - 1, b, a, c);
+    }
 }
 
 int main()
@@ -17,5 +20,7 @@ int main()
 	cout << "Please input an int data : ";
 	cin >> n;
 	hannoi(n, 'A', 'B', 'C');
+
+    system("pause");
 	return 0;
 }
