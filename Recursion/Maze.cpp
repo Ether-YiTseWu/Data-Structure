@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 #define mazeSize 10
 using namespace std;
 
@@ -46,7 +47,7 @@ void create_Maze::visit_maze(int maze[mazeSize][mazeSize], int i, int j)
 		cout << "\n \t  Find the Exit #" << seq << "\n \n";
 		for (int i = 0; i < mazeSize; i++)
 		{
-			printf("\t");
+			cout << "\t";
 			for (int j = 0; j < mazeSize; j++)
 			{
 				if (maze[i][j] == 1)
@@ -59,7 +60,6 @@ void create_Maze::visit_maze(int maze[mazeSize][mazeSize], int i, int j)
 			cout << endl;
 		}
 	}
-
 	if (maze[i][j + 1] == 0)
 		visit_maze(maze, i, j + 1);
 	if (maze[i + 1][j] == 0)
