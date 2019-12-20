@@ -31,6 +31,7 @@ public:
 class graph
 {
 public:
+	// Create Adjacency List
 	Node head[size];
 
 	void setMyway(void);
