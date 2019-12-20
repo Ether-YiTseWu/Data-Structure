@@ -31,6 +31,7 @@ public:
 class graph
 {
 public:
+	// Create Adjacency List
 	Node head[size];
 
 	void setMyway(void);
@@ -42,7 +43,7 @@ void graph::setMyway(void)
 {
 	for (int i = 0; i < size; i++)
 	{
-		cout << "³»ÂI" << i + 1 << " : ";
+		cout << "Node" << i + 1 << " : ";
 		for (int j = 0; j < size; j++)
 		{
 			if (map[i][j] == 1)
@@ -64,7 +65,7 @@ void graph::setTeacher(void)
 	for (int i = 0; i < 10; i++)
 	{
 		head[i].Data = i;
-		cout << "³»ÂI " << i+1 << " --> ";
+		cout << "Node " << i+1 << " --> ";
 		ptr = &head[i];
 		for (int j = 0; j < 10; j++)
 		{
