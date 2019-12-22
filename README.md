@@ -1,6 +1,6 @@
 # Data-Structure
 ## Overview
-Practice the common data structure
+Practice the common data structures
 >
 
 ## Course content
@@ -8,4 +8,6 @@ Practice the common data structure
 - Queue
 - Linked List
 - Recursion
+- Tree
+- Graph
 >
