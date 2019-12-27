@@ -42,7 +42,6 @@ public:
 	}
 };
 
-// Note the parameter *pathCost. Let pathCost[sizeX][sizeY] = pathCost[sizeX*sizeY] 
 void findShortestPath::build_AdjacencyMatrix_mine()
 {	
 	// build adjacencyMatrix, the cost of nodeX to nodeX is 0, others are Infinity 
@@ -70,6 +69,7 @@ void findShortestPath::build_AdjacencyMatrix_mine()
 	}
 }
 
+// Note the parameter *pathCost. Let pathCost[sizeX][sizeY] = pathCost[sizeX*sizeY] 
 void findShortestPath::build_AdjacencyMatrix_teacher(int *pathCost)
 {
 	// build adjacencyMatrix, the cost of nodeX to nodeX is 0, others are Infinity 
@@ -132,7 +132,7 @@ void findShortestPath::findPath(void)
 	{
 		int minCost = 1000, distanceTmp[size], minCost_NodeIndex, path[size];
 
-		// find the node we should add and this node's index (°}¦C¤¤³Ì¤p¥B¨S¦³³Q«ô³X¹Lªº)
+		// find the node we should add and this node's index (é™£åˆ—ä¸­æœ€å°ä¸”æ²’æœ‰è¢«æ‹œè¨ªéçš„)
 		for (int i = 0; i < size; i++)
 			if (distance[i] < minCost && visited[i] != 1)
 				minCost = distance[i], minCost_NodeIndex = i;
@@ -177,7 +177,7 @@ int main()
 
 	//P1.build_AdjacencyMatrix_teacher(&pathCost[0][0]);
 	P1.build_AdjacencyMatrix_mine();
-	cout << "³»ÂI  vex1 vex2 vex3 vex4 vex5 vex6 vex7" << endl;
+	cout << "é ‚é»  vex1 vex2 vex3 vex4 vex5 vex6 vex7" << endl;
 	P1.print_AdjacencyMatrix();
 	P1.findPath();
 
