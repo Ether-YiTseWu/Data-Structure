@@ -23,7 +23,7 @@ int pathCost[sizeX][sizeY] =
 	{ 6, 7, 8 },
 };
 
-class findShortestPath
+class findLowestCostPath
 {
 public:
 	int adjacencyMatrix[size][size], startPoint, endPoint;
@@ -42,7 +42,7 @@ public:
 	}
 };
 
-void findShortestPath::build_AdjacencyMatrix_mine()
+void findLowestCostPath::build_AdjacencyMatrix_mine()
 {	
 	// build adjacencyMatrix, the cost of nodeX to nodeX is 0, others are Infinity 
 	for (int i = 0; i < size; i++)
@@ -70,7 +70,7 @@ void findShortestPath::build_AdjacencyMatrix_mine()
 }
 
 // Note the parameter *pathCost. Let pathCost[sizeX][sizeY] = pathCost[sizeX*sizeY] 
-void findShortestPath::build_AdjacencyMatrix_teacher(int *pathCost)
+void findLowestCostPath::build_AdjacencyMatrix_teacher(int *pathCost)
 {
 	// build adjacencyMatrix, the cost of nodeX to nodeX is 0, others are Infinity 
 	for (int i = 0; i < size; i++)
@@ -93,7 +93,7 @@ void findShortestPath::build_AdjacencyMatrix_teacher(int *pathCost)
 	}
 }
 
-void findShortestPath::print_AdjacencyMatrix()
+void findLowestCostPath::print_AdjacencyMatrix()
 {
 	for (int i = 0; i < size; i++)
 	{
@@ -110,7 +110,7 @@ void findShortestPath::print_AdjacencyMatrix()
 	}
 }
 
-void findShortestPath::findPath(void)
+void findLowestCostPath::findPath(void)
 {
 	// Copy the matrix's first row to distance matrix, and let visited[0] = 1
 	for (int i = 0; i < size; i++)
@@ -173,7 +173,7 @@ void findShortestPath::findPath(void)
 int main()
 {
 	int j;
-	findShortestPath P1;
+	findLowestCostPath P1;
 
 	//P1.build_AdjacencyMatrix_teacher(&pathCost[0][0]);
 	P1.build_AdjacencyMatrix_mine();
