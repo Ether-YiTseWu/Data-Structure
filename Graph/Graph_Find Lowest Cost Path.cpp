@@ -130,7 +130,7 @@ void findLowestCostPath::findPath(void)
 	// Search the shortest path
 	while (1)
 	{
-		int minCost = 1000, distanceTmp[size], minCost_NodeIndex, path[size];
+		int minCost = 1000, distanceTmp[size], minCost_NodeIndex;
 
 		// find the node we should add and this node's index (陣列中最小且沒有被拜訪過的)
 		for (int i = 0; i < size; i++)
