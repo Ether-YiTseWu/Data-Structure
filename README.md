@@ -2,8 +2,15 @@
 ## Overview
 Practice the common data structures
 >
-
-## Course content
+## Note
+- Note01：Stack
+- Note02：Queue
+- Note03：Linked List
+- Note04：Recursion
+- Note05：Tree
+- Note06：Graph
+>
+## Code
 ### Stack
 - [Stack (Array)](https://github.com/tailer954/Data-Structure/blob/master/Stack/stack.cpp)
 - [Stack (Template)](https://github.com/tailer954/Data-Structure/blob/master/Stack/stackTemplate.cpp)
@@ -16,9 +23,7 @@ Practice the common data structures
 ### Recursion
 - [Recursion (Factorial)](https://github.com/tailer954/Data-Structure/blob/master/Recursion/Factorial.cpp)
 - [Recursion (HanoiTower)](https://github.com/tailer954/Data-Structure/blob/master/Recursion/HanoiTower.cpp)
-![](https://github.com/tailer954/Data-Structure/blob/master/Recursion/HanoiTower_explain.png)
 - [Recursion (Maze)](https://github.com/tailer954/Data-Structure/blob/master/Recursion/Maze.cpp)    
-![](https://github.com/tailer954/Data-Structure/blob/master/Recursion/Maze_Find%20EXIT.PNG)
 ### Tree
 - [Tree (Binary)](https://github.com/tailer954/Data-Structure/blob/master/Tree/Tree.cpp)
 ### Graph
