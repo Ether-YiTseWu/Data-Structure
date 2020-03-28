@@ -19,7 +19,7 @@ Practice the common data structures, including stack, queue, linked list, recurs
 - [Code14：Graph (Find Lowest Cost Spanning Tree)](https://github.com/tailer954/Data-Structure/blob/master/Graph/Graph_Find%20Lowest%20Cost%20Spanning%20Tree.cpp)
 ## Note
 - [Note01：Stack](https://github.com/tailer954/Data-Structure/blob/master/Stack/Part01_Stack.pdf)
-- [Note02：Queue](https://github.com/tailer954/Data-Structure/blob/master/Queue/Queue.cpp)
+- [Note02：Queue](https://github.com/tailer954/Data-Structure/blob/master/Queue/Part02_Queue.pdf)
 - [Note03：Linked List](https://github.com/tailer954/Data-Structure/blob/master/Linked%20List/Part03_Linked%20List.pdf)
 - [Note04：Recursion](https://github.com/tailer954/Data-Structure/blob/master/Recursion/Part04_Recursion.pdf)
 - [Note05：Tree](https://github.com/tailer954/Data-Structure/blob/master/Tree/Part05_Tree.pdf)
