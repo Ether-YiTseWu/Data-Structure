@@ -1,6 +1,6 @@
 # Data Structure
 ## Overview
-Practice the common data structures, including stack, queue, linked list, recursion, tree, and graph
+Practice some common data structures, including stack, queue, linked list, recursion, tree, and graph
 >
 ## Code
 - [Code01：Stack (Array)](https://github.com/tailer954/Data-Structure/blob/master/Stack/stack.cpp)
